@@ -46,21 +46,21 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@kelimeoyuntrbot"
-    bot_token = "5980830667"
+    bot_adi = "@XAOS_Namebot"
+    bot_token = "5805574931:AAEK1HWFX0LdfdLCioJZxf8rhDu04wA5HKA"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "@kelimeoyuntrbot"
-    bot_token = "5980830667:AAG7Ya2QrdSDp50guv_gUd3Bh7TskoqL4"
+    bot_adi = "@XAOS_Namebot"
+    bot_token = "5805574931:AAEK1HWFX0LdfdLCioJZxf8rhDu04wA5HKA"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 5940998650
+kurucu_id = 5663585448
 
-admins = [kurucu_id, 5940998650]
+admins = [kurucu_id, 5663585448]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001878251628, f"""
+        await bot.send_message(-1001826411396, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001878251628, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001826411396, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,7 +569,7 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/YasTahminbot?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/XAOS_Namebot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/StarBotKanal")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
@@ -1985,7 +1985,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1001878251628, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1001826411396, f"📜 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
