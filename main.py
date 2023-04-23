@@ -569,11 +569,11 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/XAOS_Namebot?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/StarBotKanal")
+            callback_button = types.InlineKeyboardButton(text= " Məni qrupa al", url="https://t.me/XAOS_Namebot?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀəsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/StarBotKanal")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
-            await bot.send_message(chat_id, f'<b>🇹🇷 Merhaba, Ben bir oyun botuyum .\n\n🎯 Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
+            await bot.send_message(chat_id, f'<b>az Salam mən bir oyun botuyam .\n\n🎯 Müxtəlif oyunlar oynamaq ve əyləncəli vaxt geçirmək üçün mənimlə oynaya bilərsən .\n\n⚙️ Mənimlə oynamaq üçün məni bir qrupa alın və Yönətici edin .</b>',  reply_markup=keyboard)
 
 
 
